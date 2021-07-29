@@ -1,0 +1,31 @@
+<?php
+function my_crud_schema()
+{
+    $schema['my_crud']= ['description'=>'This table is used to create CRUD operations',
+    'fields'=>['id'=>['description'=>'The primary identifier of 
+    the table','type'=>'serial','not null'=>TRUE, 'unsigned'=>TRUE,],
+
+    'title'=>['description'=>'Name of the Post',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],
+
+    'author'=>['description'=>'Author of the Post',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],
+
+    'date'=>['description'=>'Date publish post',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],
+
+    'content'=>['description'=>'Content of the Post',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],
+
+    'image'=>['description'=>'Image of the Post',
+    'type'=>'varchar','length'=>'255','not null'=>TRUE,],
+
+    'tags'=>['description'=>'Tag of the Post',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],],
+
+    'primary key'=>['id'],];
+    
+    return $schema;
+
+}
+?>
