@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "09681b77-acde-4eef-a136-b8c408a9ce81",
+		"name": "El tiempo Kids",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener Noticias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Crear/Editar Noticia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nid\": \"4\",\r\n        \"post_title\": \"Creando desde Postman\",\r\n        \"field_author\": \"1\",\r\n        \"field_date\": \"2021-07-29\",\r\n        \"field_content\": [\r\n            \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus molestias adipisci, nesciunt in quisquam voluptatibus voluptate, quasi, repellendus amet enim quibusdam esse architecto? Numquam similique distinctio ex incidunt illo.\"\r\n        ],\r\n        \"field_image\": \"/eltiempokids/sites/default/files/styles/large/public/2021-07/image_post3.jpg?itok=U-CgPhH0\",\r\n        \"field_tags\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50/eltiempokids/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50",
+					"path": [
+						"eltiempokids",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Noticia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
